@@ -1,0 +1,527 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.Josefin {
+    font-family: 'Josefin Sans';
+}
+
+.Spartan {
+    font-family: 'League Spartan';
+}
+.w-50{
+    width: 50%;
+    padding: 15px;
+}
+
+/* header section  */
+.logo {
+    font-style: italic;
+    font-size: 25px;
+}
+
+.logo a {
+    color: #fa452d;
+}
+
+.logo a span {
+    color: black;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li a {
+    color: black;
+    transition: all 0.5s;
+}
+
+nav ul li a i {
+    font-size: 6px;
+    padding: 8px;
+}
+
+nav ul li a:hover {
+    color: #fa6350;
+}
+
+.header-btn button {
+    border: none;
+    background-color: transparent;
+}
+.header-btn button a{
+    padding: 10px 30px;
+    margin: 0 10px;
+    background-color: #fa6350;
+    font-size: 18px;
+    color: white;
+    transition: all 0.5s;
+}
+
+.header-btn button:hover a{
+    background-color: black;
+}
+
+/* banner section */
+.banner {
+    position: relative;
+}
+
+.banner video {
+    width: 100%;
+    background-size: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.548);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+}
+
+.banner-content {
+    position: absolute;
+    top: 0;
+    padding: 100px;
+    z-index: 99;
+}
+
+.banner-content h2 {
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.262);
+    padding: 5px 20px;
+    padding-top: 8px;
+    color: #fa6350;
+    width: 52%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.banner-content p {
+    font-size: 80px;
+    padding: 50px 0;
+    line-height: 95px;
+    color: white;
+    font-weight: 300;
+}
+
+.banner-content a {
+    padding: 15px 30px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    transition: all 0.5s;
+    font-size: 20px;
+    color: white;
+}
+
+.banner-content a::after {
+    position: absolute;
+    content: "";
+    width: 25%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    border-right: 1px solid #fa6350;
+    border-bottom: 1px solid #fa6350;
+    transition: all 0.5s;
+}
+
+.banner-content a::before {
+    position: absolute;
+    content: "";
+    width: 25%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-top: 1px solid #fa6350;
+    border-left: 1px solid #fa6350;
+    transition: all 0.5s;
+}
+
+.banner-content a:hover {
+    background-color: black;
+}
+.banner-content a:hover::after{
+    width: 100%;
+}
+.banner-content a:hover::before{
+    width: 100%;
+}
+
+.banner-content button a {
+    color: #fa6350;
+    font-size: 20px;
+}
+
+/* blog section  */
+.blog-bg{
+    background-image: url(../img/breadcrumb-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 200px;
+    font-size: 50px;
+    line-height: 100px;
+}
+.blog h2{
+    font-weight: 400;
+    word-spacing: 20px;
+    letter-spacing: 2px;
+}
+.blog span{
+    color: #fa6350;
+}
+.blog-info .blog-img{
+    position: relative;
+    padding-top: 50px;
+} 
+.blog-info .blog-img img{
+    width: 100%;
+    backdrop-filter: contrast(10px);
+}
+.blog-info .blog-img .img-date{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    height: 120px;
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    line-height: 32px;
+    border: 1px solid white;
+}
+.blog-info .blog-img .img-date span{
+    font-weight: 700;
+    font-size: 30px;
+}
+.blog-info .img-content h2{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.blog-info .img-content h2 span{
+    color: #fa6350;
+}
+.blog-info .img-content p{
+    font-size: 32px;
+    line-height: 40px;
+    transition: all 0.5s;
+}
+.blog-info .img-content p:hover{
+    color: #fa6350;
+}
+
+/* login page section  */
+.bg{
+    background-image: url(../img/pexels-luis-quintero-1500590.jpg);
+    height: 900px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: 100px;  
+}
+.form{
+    width: 400px;
+    background-color: rgba(240, 248, 255, 0.2);
+    padding: 35px;
+    margin: 150px;
+    margin-left: 300px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid gray;
+}
+.form h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    word-spacing: 8px;
+}
+.form input{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid black;
+    margin: 10px;
+}
+.form #email_error, .form #pass_error{
+    margin: 10px;
+    font-size: 18px;
+    color: #c62828;
+    background-color: rgba(255, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #ef9a9a;
+    display: none;
+}
+.form button{
+    display: block;
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    margin: auto;
+    background-color: #fa452d;
+    color: white;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+.form button:hover{
+    background-color: black;
+}
+.form h5{
+    display: inline-block;
+    font-size: 18px;
+    padding: 20px 0;
+}
+.form h5 span{
+    padding: 22px;
+}
+.form h5 span a{
+    color: #e32108;
+    text-decoration: underline;
+}
+.form p{
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+}
+.form p::after{
+    position: absolute;
+    content: "";
+    border-top: 1px solid black;
+    width: 30%;
+    left: 0;
+    top: 10px;
+    z-index: -1;
+}
+.form p::before{
+    position: absolute;
+    content: "";
+    border-top: 1px solid black;
+    width: 30%;
+    right: 0;
+    top: 10px;
+    z-index: -1;
+}
+.form a{
+    color: black;
+}
+.form .login-icon{
+    margin: 30px;
+}
+.form .login-icon i{
+    margin: 0 30px;
+    font-size: 30px;
+}
+.form .login-icon .fa-facebook-f{
+    color: #3b5998;
+}
+.form .login-icon .fa-instagram{
+    color: #f91717;
+}
+.form .login-icon .fa-twitter{
+    color: #00acee;
+}
+
+/* sing up page  */
+.signup-bg{
+    background-image: url(../img/pexels-moose-photos-1037992.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.signup-overlay{
+    background-color: rgba(0, 0, 0, 0.305);
+}
+.signup-bg .signup-form{
+    width: 300px;
+    height: 800px;
+    /* background-color: rgba(0, 0, 0, 0.184); */
+    padding: 350px 200px;
+    margin: 0 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-bg .signup-form h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.signup-bg input{
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 15px;
+    border: none;
+}
+.signup-bg .signup-form p{
+    font-size: 20px;
+    padding: 20px 15px;
+}
+.signup-bg .signup-form p a{
+    color: #fa452d;
+    text-decoration: underline;
+    padding-left: 50px;
+}
+.signup-bg .signup-form button{
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fa6350;
+    margin: 30px 0;
+    margin-left: 100px;
+    color: white;
+    transition: all 0.5s;
+}
+.signup-bg .signup-form button:hover{
+    background-color: rgb(27, 27, 27);
+}
+
+/* my blog section */
+.my-blog-bg{
+    background-image: url(../img/pexels-jonathan-petersson-965879.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.my-blog{
+    padding: 30px;
+}
+.my-blog label{
+    font-size: 25px;
+}
+.my-blog #form input{
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid #f91717;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.overlay-myblog{
+    background-color: rgba(255, 255, 255, 0.571);
+}
+.my-blog #form button{
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fa452d;
+    color: white;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+.my-blog .blog-info{
+    border: 1px solid black;
+    height: 100%;
+    padding: 20px;
+}
+.my-blog .blog-info h1{
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+}
+#ui{
+    border-radius: 20px;
+    margin: 20px;
+    width: 33.33%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 20px;
+}
+#ui h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Josefin Sans';
+    padding: 20px 0;
+    color: black;
+}
+#ui p{
+    text-align: center;
+    font-family: 'Josefin Sans';
+    font-size: 22px;
+    color: rgb(54, 52, 52);
+    font-style: italic;
+}
+#ui img{
+    width: 350px;
+    height: 350px;
+    padding: 15px;
+}
+#ui h5{
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+    padding: 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.backtotop{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    border: 3px solid #fa6350;
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+    line-height: 50px;
+    font-size: 20px;
+    transition: all 0.5s;
+    color: #fa6350;
+}
+.backtotop:hover{
+    background-color: #fa6350;
+    color: black;
+}
